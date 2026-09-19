@@ -2264,21 +2264,32 @@ function AuthScreen() {
     </div>
   );
 }
-
 function PaymentGate({ profile, user, onSignOut, onRefreshProfile }) {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
+  const [transactionId, setTransactionId] = useState("");
+
   const status = profile?.payment_status || "unpaid";
 
   async function submitPaymentClaim() {
+    const cleanTransactionId = transactionId.trim();
+
+    if (!cleanTransactionId) {
+      setError("Please enter your Alipay Transaction ID.");
+      return;
+    }
+
     setSubmitting(true);
     setError("");
     setMessage("");
 
     const { error: updateError } = await supabase
       .from("profiles")
-      .update({ payment_status: "pending" })
+      .update({
+        payment_status: "pending",
+        alipay_transaction_id: cleanTransactionId,
+      })
       .eq("id", user.id);
 
     if (updateError) {
@@ -2287,7 +2298,10 @@ function PaymentGate({ profile, user, onSignOut, onRefreshProfile }) {
       return;
     }
 
-    setMessage("Payment claim sent. The administrator will review it.");
+    setMessage(
+      "Payment claim sent. The administrator will review your transaction."
+    );
+
     await onRefreshProfile();
     setSubmitting(false);
   }
@@ -2296,18 +2310,54 @@ function PaymentGate({ profile, user, onSignOut, onRefreshProfile }) {
     return (
       <div className="access-shell payment-shell">
         <div className="card access-card payment-card pending-card">
-          <div className="payment-state-icon"><RefreshCw size={30}/></div>
-          <div className="eyebrow">PAYMENT REVIEW</div>
-          <h1>Waiting for administrator approval</h1>
-          <p className="muted">Your payment claim has been submitted. Access will open automatically after approval.</p>
-          <div className="access-details">
-            <div><span>Email</span><strong>{user?.email || "—"}</strong></div>
-            <div><span>Status</span><strong className="status-pending">pending</strong></div>
-            <div><span>Access</span><strong>Lifetime after approval</strong></div>
+          <div className="payment-state-icon">
+            <RefreshCw size={30} />
           </div>
+
+          <div className="eyebrow">PAYMENT REVIEW</div>
+
+          <h1>Waiting for administrator approval</h1>
+
+          <p className="muted">
+            Your payment claim has been submitted. Access will open
+            automatically after approval.
+          </p>
+
+          <div className="access-details">
+            <div>
+              <span>Email</span>
+              <strong>{user?.email || "—"}</strong>
+            </div>
+
+            <div>
+              <span>Payment Code</span>
+              <strong>{profile?.payment_code || "—"}</strong>
+            </div>
+
+            <div>
+              <span>Alipay Transaction ID</span>
+              <strong>{profile?.alipay_transaction_id || "—"}</strong>
+            </div>
+
+            <div>
+              <span>Status</span>
+              <strong className="status-pending">pending</strong>
+            </div>
+
+            <div>
+              <span>Access</span>
+              <strong>Lifetime after approval</strong>
+            </div>
+          </div>
+
           <div className="access-actions">
-            <button className="primary" onClick={onRefreshProfile}>Refresh status</button>
-            <button className="secondary" onClick={onSignOut}>Sign out</button>
+            <button className="primary" onClick={onRefreshProfile}>
+              Refresh status
+            </button>
+
+            <button className="secondary" onClick={onSignOut}>
+              Sign out
+            </button>
           </div>
         </div>
       </div>
@@ -2320,37 +2370,123 @@ function PaymentGate({ profile, user, onSignOut, onRefreshProfile }) {
         <div className="payment-header">
           <div>
             <div className="eyebrow">LIFETIME ACCESS</div>
-            <h1>{status === "rejected" ? "Submit your payment again" : "Unlock the full learning platform"}</h1>
-            <p className="muted">Pay once with Alipay. After the administrator confirms it, your account stays open permanently.</p>
+
+            <h1>
+              {status === "rejected"
+                ? "Submit your payment again"
+                : "Unlock the full learning platform"}
+            </h1>
+
+            <p className="muted">
+              Pay once with Alipay. After the administrator confirms it,
+              your account stays open permanently.
+            </p>
           </div>
-          <div className="payment-price"><span>¥</span><strong>20</strong><small>CNY · one time</small></div>
+
+          <div className="payment-price">
+            <span>¥</span>
+            <strong>20</strong>
+            <small>CNY · one time</small>
+          </div>
         </div>
 
         {status === "rejected" && (
-          <div className="auth-alert error">Your previous payment claim was not approved. Please verify the payment and submit again.</div>
+          <div className="auth-alert error">
+            Your previous payment claim was not approved. Please verify the
+            payment and submit again.
+          </div>
         )}
 
         <div className="payment-layout">
           <div className="qr-panel">
-            <img src="/alipay-qr.jpg" alt="Alipay payment QR code" className="payment-qr" />
-            <div className="qr-caption"><CreditCard size={18}/><span>Scan with Alipay and pay exactly 20 CNY</span></div>
+            <img
+              src="/alipay-qr.jpg"
+              alt="Alipay payment QR code"
+              className="payment-qr"
+            />
+
+            <div className="qr-caption">
+              <CreditCard size={18} />
+              <span>Scan with Alipay and pay exactly 20 CNY</span>
+            </div>
           </div>
 
           <div className="payment-instructions">
-            <div className="payment-step"><span>1</span><div><strong>Open Alipay</strong><p>Use the Scan function and scan the QR code.</p></div></div>
-            <div className="payment-step"><span>2</span><div><strong>Pay 20 CNY</strong><p>Complete the payment to the displayed Alipay account.</p></div></div>
-            <div className="payment-step"><span>3</span><div><strong>Submit for approval</strong><p>After payment, press the button below. The administrator will verify it manually.</p></div></div>
+            <div className="payment-step">
+              <span>1</span>
+              <div>
+                <strong>Open Alipay</strong>
+                <p>Use the Scan function and scan the QR code.</p>
+              </div>
+            </div>
 
-            <div className="payer-account"><span>Account</span><strong>{user?.email || profile?.email || "—"}</strong></div>
+            <div className="payment-step">
+              <span>2</span>
+              <div>
+                <strong>Pay 20 CNY</strong>
+                <p>Complete the payment to the displayed Alipay account.</p>
+              </div>
+            </div>
+
+            <div className="payment-step">
+              <span>3</span>
+              <div>
+                <strong>Submit for approval</strong>
+                <p>
+                  After payment, enter your Alipay Transaction ID and send
+                  the payment for administrator review.
+                </p>
+              </div>
+            </div>
+
+            <div className="payer-account">
+              <span>Account</span>
+              <strong>{user?.email || profile?.email || "—"}</strong>
+            </div>
+
+            <div className="payer-account">
+              <span>Payment Code</span>
+              <strong>{profile?.payment_code || "—"}</strong>
+            </div>
+
+            <div className="payer-account">
+              <span>Alipay Transaction ID</span>
+
+              <input
+                type="text"
+                value={transactionId}
+                onChange={(e) => setTransactionId(e.target.value)}
+                placeholder="Enter Alipay transaction ID"
+                autoComplete="off"
+              />
+            </div>
 
             {error && <div className="auth-alert error">{error}</div>}
-            {message && <div className="auth-alert success">{message}</div>}
 
-            <button className="primary payment-submit" onClick={submitPaymentClaim} disabled={submitting}>
-              {submitting ? "Submitting..." : "I have paid — send for approval"}
+            {message && (
+              <div className="auth-alert success">{message}</div>
+            )}
+
+            <button
+              className="primary payment-submit"
+              onClick={submitPaymentClaim}
+              disabled={submitting || !transactionId.trim()}
+            >
+              {submitting
+                ? "Submitting..."
+                : "I have paid — send for approval"}
             </button>
-            <button className="secondary payment-signout" onClick={onSignOut}>Sign out</button>
-            <p className="access-small">Do not press “I have paid” before completing the payment.</p>
+
+            <button
+              className="secondary payment-signout"
+              onClick={onSignOut}
+            >
+              Sign out
+            </button>
+
+            <p className="access-small">
+              Do not press “I have paid” before completing the payment.
+            </p>
           </div>
         </div>
       </div>
@@ -2370,7 +2506,7 @@ function AdminPanel() {
     setError("");
     const { data, error: loadError } = await supabase
       .from("profiles")
-      .select("id,email,phone,role,payment_status,lifetime_access,created_at")
+      .select("id,email,phone,role,payment_status,lifetime_access,payment_code,alipay_transaction_id,created_at")
       .eq("role", "user")
       .order("created_at", { ascending: false });
 
@@ -2446,11 +2582,13 @@ function AdminPanel() {
         ) : (
           <div className="admin-table-wrap">
             <table className="admin-table">
-              <thead><tr><th>User</th><th>Status</th><th>Access</th><th>Created</th><th>Action</th></tr></thead>
+              <thead><tr><th>User</th><th>Payment Code</th><th>Alipay Transaction ID</th><th>Status</th><th>Access</th><th>Created</th><th>Action</th></tr></thead>
               <tbody>
                 {shown.map((item) => (
                   <tr key={item.id}>
                     <td><strong>{item.email || item.phone || "Unknown user"}</strong><small>{item.id}</small></td>
+                    <td><strong>{item.payment_code || "—"}</strong></td>
+                    <td><strong>{item.alipay_transaction_id || "—"}</strong></td>
                     <td><span className={`admin-status status-${item.payment_status}`}>{item.payment_status}</span></td>
                     <td>{item.lifetime_access ? "Lifetime" : "Locked"}</td>
                     <td>{item.created_at ? new Date(item.created_at).toLocaleDateString() : "—"}</td>
@@ -2486,7 +2624,7 @@ function App() {
 
     const { data, error } = await supabase
       .from("profiles")
-      .select("id,email,phone,role,payment_status,lifetime_access")
+      .select("id,email,phone,role,payment_status,lifetime_access,payment_code,alipay_transaction_id")
       .eq("id", activeSession.user.id)
       .single();
 
@@ -2570,4 +2708,3 @@ function App() {
 }
 
 createRoot(document.getElementById("root")).render(<App/>);
-
