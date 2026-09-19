@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 1,
+    "word": "啊",
+    "pinyin": "a",
+    "partOfSpeech": "auxiliary",
+    "meaning": "ah, oh",
+    "hsk": 2
+  },
+  {
+    "id": 2,
+    "word": "爱好",
+    "pinyin": "àihào",
+    "partOfSpeech": "verb、noun",
+    "meaning": "to like; hobby",
+    "hsk": 2
+  },
+  {
+    "id": 3,
+    "word": "白色",
+    "pinyin": "báisè",
+    "partOfSpeech": "noun",
+    "meaning": "white",
+    "hsk": 2
+  },
+  {
+    "id": 4,
+    "word": "班",
+    "pinyin": "bān",
+    "partOfSpeech": "noun、（classifier）",
+    "meaning": "class, team; (measure word for groups)",
+    "hsk": 2
+  },
+  {
+    "id": 5,
+    "word": "帮",
+    "pinyin": "bāng",
+    "partOfSpeech": "verb",
+    "meaning": "to help",
+    "hsk": 2
+  },
+  {
+    "id": 6,
+    "word": "帮忙",
+    "pinyin": "bāngmáng",
+    "partOfSpeech": "verb",
+    "meaning": "to help",
+    "hsk": 2
+  },
+  {
+    "id": 7,
+    "word": "包",
+    "pinyin": "bāo",
+    "partOfSpeech": "verb、noun、classifier",
+    "meaning": "to wrap, to pack; bag; measure word for bundles",
+    "hsk": 2
+  },
+  {
+    "id": 8,
+    "word": "本子",
+    "pinyin": "běnzi",
+    "partOfSpeech": "noun",
+    "meaning": "notebook",
+    "hsk": 2
+  },
+  {
+    "id": 9,
+    "word": "比",
+    "pinyin": "bǐ",
+    "partOfSpeech": "verb、preposition",
+    "meaning": "to compare; than",
+    "hsk": 2
+  },
+  {
+    "id": 10,
+    "word": "笔",
+    "pinyin": "bǐ",
+    "partOfSpeech": "noun、（classifier）",
+    "meaning": "pen; (measure word for writing tools)",
+    "hsk": 2
+  },
+  {
+    "id": 11,
+    "word": "别",
+    "pinyin": "bié",
+    "partOfSpeech": "adverb",
+    "meaning": "don't, not bad",
+    "hsk": 2
+  },
+  {
+    "id": 12,
+    "word": "不错",
+    "pinyin": "búcuò",
+    "partOfSpeech": "adjective",
+    "meaning": "not bad, pretty good",
+    "hsk": 2
+  },
+  {
+    "id": 13,
+    "word": "不好意思",
+    "pinyin": "bù hǎoyìsi",
+    "partOfSpeech": "adjective",
+    "meaning": "sorry, embarrassed",
+    "hsk": 2
+  },
+  {
+    "id": 14,
+    "word": "长",
+    "pinyin": "cháng",
+    "partOfSpeech": "adjective",
+    "meaning": "long",
+    "hsk": 2
+  },
+  {
+    "id": 15,
+    "word": "车站",
+    "pinyin": "chēzhàn",
+    "partOfSpeech": "noun",
+    "meaning": "station",
+    "hsk": 2
+  },
+  {
+    "id": 16,
+    "word": "出",
+    "pinyin": "chū",
+    "partOfSpeech": "verb",
+    "meaning": "to go out, to leave",
+    "hsk": 2
+  },
+  {
+    "id": 17,
+    "word": "出国",
+    "pinyin": "chūguó",
+    "partOfSpeech": "verb",
+    "meaning": "to go abroad",
+    "hsk": 2
+  },
+  {
+    "id": 18,
+    "word": "出来",
+    "pinyin": "chūlái",
+    "partOfSpeech": "verb",
+    "meaning": "to come out",
+    "hsk": 2
+  },
+  {
+    "id": 19,
+    "word": "出门",
+    "pinyin": "chūmén",
+    "partOfSpeech": "verb",
+    "meaning": "to go out",
+    "hsk": 2
+  },
+  {
+    "id": 20,
+    "word": "出去",
+    "pinyin": "chūqù",
+    "partOfSpeech": "verb",
+    "meaning": "to go out",
+    "hsk": 2
+  },
+  {
+    "id": 21,
+    "word": "床",
+    "pinyin": "chuáng",
+    "partOfSpeech": "noun",
+    "meaning": "bed",
+    "hsk": 2
+  },
+  {
+    "id": 22,
+    "word": "词",
+    "pinyin": "cí",
+    "partOfSpeech": "noun",
+    "meaning": "word, term",
+    "hsk": 2
+  },
+  {
+    "id": 23,
+    "word": "次",
+    "pinyin": "cì",
+    "partOfSpeech": "classifier、（adjective）",
+    "meaning": "measure word of time or occasion; (next in order)",
+    "hsk": 2
+  },
+  {
+    "id": 24,
+    "word": "从",
+    "pinyin": "cóng",
+    "partOfSpeech": "preposition、（adverb）",
+    "meaning": "from; (ever)",
+    "hsk": 2
+  },
+  {
+    "id": 25,
+    "word": "从小",
+    "pinyin": "cóngxiǎo",
+    "partOfSpeech": "adverb",
+    "meaning": "from childhood",
+    "hsk": 2
+  },
+  {
+    "id": 26,
+    "word": "错",
+    "pinyin": "cuò",
+    "partOfSpeech": "adjective",
+    "meaning": "wrong, mistaken",
+    "hsk": 2
+  },
+  {
+    "id": 27,
+    "word": "打",
+    "pinyin": "dǎ",
+    "partOfSpeech": "verb",
+    "meaning": "to hit, to play, to make",
+    "hsk": 2
+  },
+  {
+    "id": 28,
+    "word": "打车",
+    "pinyin": "dǎchē",
+    "partOfSpeech": "verb",
+    "meaning": "to take a taxi",
+    "hsk": 2
+  },
+  {
+    "id": 29,
+    "word": "打开",
+    "pinyin": "dǎkāi",
+    "partOfSpeech": "verb",
+    "meaning": "to open",
+    "hsk": 2
+  },
+  {
+    "id": 30,
+    "word": "但",
+    "pinyin": "dàn",
+    "partOfSpeech": "conjunction、（adverb）",
+    "meaning": "but, however; (only, merely)",
+    "hsk": 2
+  },
+  {
+    "id": 31,
+    "word": "但是",
+    "pinyin": "dànshì",
+    "partOfSpeech": "conjunction",
+    "meaning": "but, however",
+    "hsk": 2
+  },
+  {
+    "id": 32,
+    "word": "得",
+    "pinyin": "de",
+    "partOfSpeech": "auxiliary",
+    "meaning": "particle indicating degree or manner",
+    "hsk": 2
+  },
+  {
+    "id": 33,
+    "word": "地",
+    "pinyin": "de",
+    "partOfSpeech": "auxiliary",
+    "meaning": "particle modifying an adjective into an adverb",
+    "hsk": 2
+  },
+  {
+    "id": 34,
+    "word": "等",
+    "pinyin": "děng",
+    "partOfSpeech": "verb、（preposition）",
+    "meaning": "to wait; (and so on, until)",
+    "hsk": 2
+  },
+  {
+    "id": 35,
+    "word": "地铁",
+    "pinyin": "dìtiě",
+    "partOfSpeech": "noun",
+    "meaning": "subway, metro",
+    "hsk": 2
+  },
+  {
+    "id": 36,
+    "word": "点",
+    "pinyin": "diǎn",
+    "partOfSpeech": "verb、（noun、classifier）",
+    "meaning": "to light, to ignite; (point, dot; to order)",
+    "hsk": 2
+  },
+  {
+    "id": 37,
+    "word": "懂",
+    "pinyin": "dǒng",
+    "partOfSpeech": "verb",
+    "meaning": "to understand",
+    "hsk": 2
+  },
+  {
+    "id": 38,
+    "word": "动",
+    "pinyin": "dòng",
+    "partOfSpeech": "verb",
+    "meaning": "to move, to act",
+    "hsk": 2
+  },
+  {
+    "id": 39,
+    "word": "饭馆",
+    "pinyin": "fànguǎn",
+    "partOfSpeech": "noun",
+    "meaning": "restaurant",
+    "hsk": 2
+  },
+  {
+    "id": 40,
+    "word": "飞",
+    "pinyin": "fēi",
+    "partOfSpeech": "verb",
+    "meaning": "to fly",
+    "hsk": 2
+  },
+  {
+    "id": 41,
+    "word": "高",
+    "pinyin": "gāo",
+    "partOfSpeech": "adjective、noun",
+    "meaning": "tall, high; height",
+    "hsk": 2
+  },
+  {
+    "id": 42,
+    "word": "高中",
+    "pinyin": "gāozhōng",
+    "partOfSpeech": "noun",
+    "meaning": "high school",
+    "hsk": 2
+  },
+  {
+    "id": 43,
+    "word": "告诉",
+    "pinyin": "gàosu",
+    "partOfSpeech": "verb",
+    "meaning": "to tell",
+    "hsk": 2
+  },
+  {
+    "id": 44,
+    "word": "个子",
+    "pinyin": "gèzi",
+    "partOfSpeech": "noun",
+    "meaning": "height, stature",
+    "hsk": 2
+  },
+  {
+    "id": 45,
+    "word": "跟",
+    "pinyin": "gēn",
+    "partOfSpeech": "preposition、conjunction、（noun、verb）",
+    "meaning": "with; and; (heel; to follow, to accompany)",
+    "hsk": 2
+  },
+  {
+    "id": 46,
+    "word": "公交车",
+    "pinyin": "gōngjiāochē",
+    "partOfSpeech": "noun",
+    "meaning": "bus",
+    "hsk": 2
+  },
+  {
+    "id": 47,
+    "word": "过",
+    "pinyin": "guò",
+    "partOfSpeech": "verb",
+    "meaning": "to pass, to cross; excessive",
+    "hsk": 2
+  },
+  {
+    "id": 48,
+    "word": "过来",
+    "pinyin": "guòlái",
+    "partOfSpeech": "verb",
+    "meaning": "to come over",
+    "hsk": 2
+  },
+  {
+    "id": 49,
+    "word": "过年",
+    "pinyin": "guònián",
+    "partOfSpeech": "verb",
+    "meaning": "to celebrate the New Year",
+    "hsk": 2
+  },
+  {
+    "id": 50,
+    "word": "过去",
+    "pinyin": "guòqù",
+    "partOfSpeech": "verb",
+    "meaning": "to go over",
+    "hsk": 2
+  },
+  {
+    "id": 51,
+    "word": "过",
+    "pinyin": "guo",
+    "partOfSpeech": "auxiliary",
+    "meaning": "particle indicating past experience",
+    "hsk": 2
+  },
+  {
+    "id": 52,
+    "word": "还是",
+    "pinyin": "háishi",
+    "partOfSpeech": "adverb、conjunction",
+    "meaning": "still; or",
+    "hsk": 2
+  },
+  {
+    "id": 53,
+    "word": "黑色",
+    "pinyin": "hēisè",
+    "partOfSpeech": "noun",
+    "meaning": "black",
+    "hsk": 2
+  },
+  {
+    "id": 54,
+    "word": "红茶",
+    "pinyin": "hóngchá",
+    "partOfSpeech": "noun",
+    "meaning": "black tea",
+    "hsk": 2
+  },
+  {
+    "id": 55,
+    "word": "红色",
+    "pinyin": "hóngsè",
+    "partOfSpeech": "noun",
+    "meaning": "red",
+    "hsk": 2
+  },
+  {
+    "id": 56,
+    "word": "后面",
+    "pinyin": "hòumiàn",
+    "partOfSpeech": "noun",
+    "meaning": "behind, back",
+    "hsk": 2
+  },
+  {
+    "id": 57,
+    "word": "花",
+    "pinyin": "huā",
+    "partOfSpeech": "verb",
+    "meaning": "to spend (money or time)",
+    "hsk": 2
+  },
+  {
+    "id": 58,
+    "word": "花2",
+    "pinyin": "huā",
+    "partOfSpeech": "noun、（adjective）",
+    "meaning": "flower; (colorful)",
+    "hsk": 2
+  },
+  {
+    "id": 59,
+    "word": "画",
+    "pinyin": "huà",
+    "partOfSpeech": "verb、noun",
+    "meaning": "to draw, to paint; painting, picture",
+    "hsk": 2
+  },
+  {
+    "id": 60,
+    "word": "坏",
+    "pinyin": "huài",
+    "partOfSpeech": "adjective",
+    "meaning": "bad, broken",
+    "hsk": 2
+  },
+  {
+    "id": 61,
+    "word": "回来",
+    "pinyin": "huílái",
+    "partOfSpeech": "verb",
+    "meaning": "to come back",
+    "hsk": 2
+  },
+  {
+    "id": 62,
+    "word": "回去",
+    "pinyin": "huíqù",
+    "partOfSpeech": "verb",
+    "meaning": "to go back",
+    "hsk": 2
+  },
+  {
+    "id": 63,
+    "word": "机场",
+    "pinyin": "jīchǎng",
+    "partOfSpeech": "noun",
+    "meaning": "airport",
+    "hsk": 2
+  },
+  {
+    "id": 64,
+    "word": "机票",
+    "pinyin": "jīpiào",
+    "partOfSpeech": "noun",
+    "meaning": "airplane ticket",
+    "hsk": 2
+  },
+  {
+    "id": 65,
+    "word": "记得",
+    "pinyin": "jìde",
+    "partOfSpeech": "verb",
+    "meaning": "to remember",
+    "hsk": 2
+  },
+  {
+    "id": 66,
+    "word": "间",
+    "pinyin": "jiān",
+    "partOfSpeech": "classifier、（noun）",
+    "meaning": "measure word for rooms; between",
+    "hsk": 2
+  },
+  {
+    "id": 67,
+    "word": "教",
+    "pinyin": "jiāo",
+    "partOfSpeech": "verb",
+    "meaning": "to teach",
+    "hsk": 2
+  },
+  {
+    "id": 68,
+    "word": "教室",
+    "pinyin": "jiàoshì",
+    "partOfSpeech": "noun",
+    "meaning": "classroom",
+    "hsk": 2
+  },
+  {
+    "id": 69,
+    "word": "介绍",
+    "pinyin": "jièshào",
+    "partOfSpeech": "verb",
+    "meaning": "to introduce",
+    "hsk": 2
+  },
+  {
+    "id": 70,
+    "word": "进",
+    "pinyin": "jìn",
+    "partOfSpeech": "verb",
+    "meaning": "to enter",
+    "hsk": 2
+  },
+  {
+    "id": 71,
+    "word": "近",
+    "pinyin": "jìn",
+    "partOfSpeech": "adjective",
+    "meaning": "near, close",
+    "hsk": 2
+  },
+  {
+    "id": 72,
+    "word": "进来",
+    "pinyin": "jìnlái",
+    "partOfSpeech": "verb",
+    "meaning": "to come in",
+    "hsk": 2
+  },
+  {
+    "id": 73,
+    "word": "进去",
+    "pinyin": "jìnqù",
+    "partOfSpeech": "verb",
+    "meaning": "to go in",
+    "hsk": 2
+  },
+  {
+    "id": 74,
+    "word": "经常",
+    "pinyin": "jīngcháng",
+    "partOfSpeech": "adverb",
+    "meaning": "often",
+    "hsk": 2
+  },
+  {
+    "id": 75,
+    "word": "酒店",
+    "pinyin": "jiǔdiàn",
+    "partOfSpeech": "noun",
+    "meaning": "hotel",
+    "hsk": 2
+  },
+  {
+    "id": 76,
+    "word": "就",
+    "pinyin": "jiù",
+    "partOfSpeech": "adverb、（preposition）",
+    "meaning": "just, then; (as early as, only, as soon as)",
+    "hsk": 2
+  },
+  {
+    "id": 77,
+    "word": "咖啡",
+    "pinyin": "kāfēi",
+    "partOfSpeech": "noun",
+    "meaning": "coffee",
+    "hsk": 2
+  },
+  {
+    "id": 78,
+    "word": "开始",
+    "pinyin": "kāishǐ",
+    "partOfSpeech": "verb、noun",
+    "meaning": "to start; beginning",
+    "hsk": 2
+  },
+  {
+    "id": 79,
+    "word": "开学",
+    "pinyin": "kāixué",
+    "partOfSpeech": "verb",
+    "meaning": "school starts",
+    "hsk": 2
+  },
+  {
+    "id": 80,
+    "word": "考",
+    "pinyin": "kǎo",
+    "partOfSpeech": "verb",
+    "meaning": "to test, to take an exam",
+    "hsk": 2
+  },
+  {
+    "id": 81,
+    "word": "考试",
+    "pinyin": "kǎoshì",
+    "partOfSpeech": "verb、noun",
+    "meaning": "to take an exam; exam",
+    "hsk": 2
+  },
+  {
+    "id": 82,
+    "word": "可能",
+    "pinyin": "kěnéng",
+    "partOfSpeech": "adjective、noun、verb",
+    "meaning": "possible; possibility; may",
+    "hsk": 2
+  },
+  {
+    "id": 83,
+    "word": "裤子",
+    "pinyin": "kùzi",
+    "partOfSpeech": "noun",
+    "meaning": "pants",
+    "hsk": 2
+  },
+  {
+    "id": 84,
+    "word": "快",
+    "pinyin": "kuài",
+    "partOfSpeech": "adjective、adverb",
+    "meaning": "fast; soon, quickly",
+    "hsk": 2
+  },
+  {
+    "id": 85,
+    "word": "快乐",
+    "pinyin": "kuàilè",
+    "partOfSpeech": "adjective",
+    "meaning": "happy, joyful",
+    "hsk": 2
+  },
+  {
+    "id": 86,
+    "word": "快要",
+    "pinyin": "kuàiyào",
+    "partOfSpeech": "adverb",
+    "meaning": "soon, almost",
+    "hsk": 2
+  },
+  {
+    "id": 87,
+    "word": "篮球",
+    "pinyin": "lánqiú",
+    "partOfSpeech": "noun",
+    "meaning": "basketball",
+    "hsk": 2
+  },
+  {
+    "id": 88,
+    "word": "累",
+    "pinyin": "lèi",
+    "partOfSpeech": "adjective、verb",
+    "meaning": "tired; to tire",
+    "hsk": 2
+  },
+  {
+    "id": 89,
+    "word": "离",
+    "pinyin": "lí",
+    "partOfSpeech": "verb",
+    "meaning": "to leave, to be away from",
+    "hsk": 2
+  },
+  {
+    "id": 90,
+    "word": "里面",
+    "pinyin": "lǐmiàn",
+    "partOfSpeech": "noun",
+    "meaning": "inside",
+    "hsk": 2
+  },
+  {
+    "id": 91,
+    "word": "楼",
+    "pinyin": "lóu",
+    "partOfSpeech": "noun",
+    "meaning": "building, floor",
+    "hsk": 2
+  },
+  {
+    "id": 92,
+    "word": "路",
+    "pinyin": "lù",
+    "partOfSpeech": "noun",
+    "meaning": "road, path",
+    "hsk": 2
+  },
+  {
+    "id": 93,
+    "word": "路上",
+    "pinyin": "lùshang",
+    "partOfSpeech": "noun",
+    "meaning": "on the road",
+    "hsk": 2
+  },
+  {
+    "id": 94,
+    "word": "旅游",
+    "pinyin": "lǚyóu",
+    "partOfSpeech": "verb",
+    "meaning": "to travel",
+    "hsk": 2
+  },
+  {
+    "id": 95,
+    "word": "绿茶",
+    "pinyin": "lǜchá",
+    "partOfSpeech": "noun",
+    "meaning": "green tea",
+    "hsk": 2
+  },
+  {
+    "id": 96,
+    "word": "绿色",
+    "pinyin": "lǜsè",
+    "partOfSpeech": "noun、（adjective）",
+    "meaning": "green color; (green)",
+    "hsk": 2
+  },
+  {
+    "id": 97,
+    "word": "慢",
+    "pinyin": "màn",
+    "partOfSpeech": "adjective",
+    "meaning": "slow",
+    "hsk": 2
+  },
+  {
+    "id": 98,
+    "word": "没意思",
+    "pinyin": "méi yìsi",
+    "partOfSpeech": "adjective",
+    "meaning": "boring, uninteresting",
+    "hsk": 2
+  },
+  {
+    "id": 99,
+    "word": "每",
+    "pinyin": "měi",
+    "partOfSpeech": "pronoun、（adverb）",
+    "meaning": "every, each; (per)",
+    "hsk": 2
+  },
+  {
+    "id": 100,
+    "word": "门",
+    "pinyin": "mén",
+    "partOfSpeech": "noun",
+    "meaning": "door, gate",
+    "hsk": 2
+  },
+  {
+    "id": 101,
+    "word": "门口",
+    "pinyin": "ménkǒu",
+    "partOfSpeech": "noun",
+    "meaning": "doorway, entrance",
+    "hsk": 2
+  },
+  {
+    "id": 102,
+    "word": "门票",
+    "pinyin": "ménpiào",
+    "partOfSpeech": "noun",
+    "meaning": "ticket",
+    "hsk": 2
+  },
+  {
+    "id": 103,
+    "word": "面",
+    "pinyin": "miàn",
+    "partOfSpeech": "suffix、（verb、noun、classifier）",
+    "meaning": "suffix indicating a person with a certain characteristic; (to face; side, aspect; measure word for flat objects)",
+    "hsk": 2
+  },
+  {
+    "id": 104,
+    "word": "名",
+    "pinyin": "míng",
+    "partOfSpeech": "noun、classifier",
+    "meaning": "name, reputation; measure word for people",
+    "hsk": 2
+  },
+  {
+    "id": 105,
+    "word": "拿",
+    "pinyin": "ná",
+    "partOfSpeech": "verb",
+    "meaning": "to take, to hold",
+    "hsk": 2
+  },
+  {
+    "id": 106,
+    "word": "那么",
+    "pinyin": "nàme",
+    "partOfSpeech": "pronoun、conjunction",
+    "meaning": "so, like that; then",
+    "hsk": 2
+  },
+  {
+    "id": 107,
+    "word": "那样",
+    "pinyin": "nàyàng",
+    "partOfSpeech": "pronoun",
+    "meaning": "like that",
+    "hsk": 2
+  },
+  {
+    "id": 108,
+    "word": "奶茶",
+    "pinyin": "nǎichá",
+    "partOfSpeech": "noun",
+    "meaning": "milk tea",
+    "hsk": 2
+  },
+  {
+    "id": 109,
+    "word": "奶奶",
+    "pinyin": "nǎinai",
+    "partOfSpeech": "noun",
+    "meaning": "grandmother",
+    "hsk": 2
+  },
+  {
+    "id": 110,
+    "word": "男孩儿",
+    "pinyin": "nánháir",
+    "partOfSpeech": "noun",
+    "meaning": "boy",
+    "hsk": 2
+  },
+  {
+    "id": 111,
+    "word": "鸟",
+    "pinyin": "niǎo",
+    "partOfSpeech": "noun",
+    "meaning": "bird",
+    "hsk": 2
+  },
+  {
+    "id": 112,
+    "word": "女孩儿",
+    "pinyin": "nǚháir",
+    "partOfSpeech": "noun",
+    "meaning": "girl",
+    "hsk": 2
+  },
+  {
+    "id": 113,
+    "word": "旁边",
+    "pinyin": "pángbiān",
+    "partOfSpeech": "noun",
+    "meaning": "side",
+    "hsk": 2
+  },
+  {
+    "id": 114,
+    "word": "跑",
+    "pinyin": "pǎo",
+    "partOfSpeech": "verb",
+    "meaning": "to run",
+    "hsk": 2
+  },
+  {
+    "id": 115,
+    "word": "跑步",
+    "pinyin": "pǎobù",
+    "partOfSpeech": "verb",
+    "meaning": "to run, jogging",
+    "hsk": 2
+  },
+  {
+    "id": 116,
+    "word": "票",
+    "pinyin": "piào",
+    "partOfSpeech": "noun",
+    "meaning": "ticket",
+    "hsk": 2
+  },
+  {
+    "id": 117,
+    "word": "妻子",
+    "pinyin": "qīzi",
+    "partOfSpeech": "noun",
+    "meaning": "wife",
+    "hsk": 2
+  },
+  {
+    "id": 118,
+    "word": "起来",
+    "pinyin": "qǐlái",
+    "partOfSpeech": "verb",
+    "meaning": "to get up, to stand up; used after verbs to indicate upward movement or beginning",
+    "hsk": 2
+  },
+  {
+    "id": 119,
+    "word": "前面",
+    "pinyin": "qiánmiàn",
+    "partOfSpeech": "noun",
+    "meaning": "front",
+    "hsk": 2
+  },
+  {
+    "id": 120,
+    "word": "晴",
+    "pinyin": "qíng",
+    "partOfSpeech": "adjective",
+    "meaning": "sunny, clear",
+    "hsk": 2
+  },
+  {
+    "id": 121,
+    "word": "球",
+    "pinyin": "qiú",
+    "partOfSpeech": "noun",
+    "meaning": "ball, sphere",
+    "hsk": 2
+  },
+  {
+    "id": 122,
+    "word": "让",
+    "pinyin": "ràng",
+    "partOfSpeech": "verb、（preposition）",
+    "meaning": "to let, to allow; (by)",
+    "hsk": 2
+  },
+  {
+    "id": 123,
+    "word": "肉",
+    "pinyin": "ròu",
+    "partOfSpeech": "noun",
+    "meaning": "meat",
+    "hsk": 2
+  },
+  {
+    "id": 124,
+    "word": "商场",
+    "pinyin": "shāngchǎng",
+    "partOfSpeech": "noun",
+    "meaning": "shopping mall",
+    "hsk": 2
+  },
+  {
+    "id": 125,
+    "word": "上来",
+    "pinyin": "shànglái",
+    "partOfSpeech": "verb",
+    "meaning": "to come up",
+    "hsk": 2
+  },
+  {
+    "id": 126,
+    "word": "上面",
+    "pinyin": "shàngmiàn",
+    "partOfSpeech": "noun",
+    "meaning": "above, top",
+    "hsk": 2
+  },
+  {
+    "id": 127,
+    "word": "上去",
+    "pinyin": "shàngqù",
+    "partOfSpeech": "verb",
+    "meaning": "to go up",
+    "hsk": 2
+  },
+  {
+    "id": 128,
+    "word": "上网",
+    "pinyin": "shàngwǎng",
+    "partOfSpeech": "verb",
+    "meaning": "to go online, to surf the Internet",
+    "hsk": 2
+  },
+  {
+    "id": 129,
+    "word": "身体",
+    "pinyin": "shēntǐ",
+    "partOfSpeech": "noun",
+    "meaning": "body",
+    "hsk": 2
+  },
+  {
+    "id": 130,
+    "word": "生日",
+    "pinyin": "shēngrì",
+    "partOfSpeech": "noun",
+    "meaning": "birthday",
+    "hsk": 2
+  },
+  {
+    "id": 131,
+    "word": "时",
+    "pinyin": "shí",
+    "partOfSpeech": "noun、（classifier）",
+    "meaning": "time, moment; (season, period)",
+    "hsk": 2
+  },
+  {
+    "id": 132,
+    "word": "事情",
+    "pinyin": "shìqing",
+    "partOfSpeech": "noun",
+    "meaning": "matter, affair",
+    "hsk": 2
+  },
+  {
+    "id": 133,
+    "word": "手",
+    "pinyin": "shǒu",
+    "partOfSpeech": "noun",
+    "meaning": "hand",
+    "hsk": 2
+  },
+  {
+    "id": 134,
+    "word": "手表",
+    "pinyin": "shǒubiǎo",
+    "partOfSpeech": "noun",
+    "meaning": "watch, wristwatch",
+    "hsk": 2
+  },
+  {
+    "id": 135,
+    "word": "书包",
+    "pinyin": "shūbāo",
+    "partOfSpeech": "noun",
+    "meaning": "backpack, schoolbag",
+    "hsk": 2
+  },
+  {
+    "id": 136,
+    "word": "舒服",
+    "pinyin": "shūfu",
+    "partOfSpeech": "adjective",
+    "meaning": "comfortable",
+    "hsk": 2
+  },
+  {
+    "id": 137,
+    "word": "送",
+    "pinyin": "sòng",
+    "partOfSpeech": "verb",
+    "meaning": "to give, to send, to see off",
+    "hsk": 2
+  },
+  {
+    "id": 138,
+    "word": "虽然",
+    "pinyin": "suīrán",
+    "partOfSpeech": "conjunction",
+    "meaning": "although",
+    "hsk": 2
+  },
+  {
+    "id": 139,
+    "word": "所以",
+    "pinyin": "suǒyǐ",
+    "partOfSpeech": "conjunction",
+    "meaning": "so, therefore",
+    "hsk": 2
+  },
+  {
+    "id": 140,
+    "word": "疼",
+    "pinyin": "téng",
+    "partOfSpeech": "adjective、（verb）",
+    "meaning": "painful, sore; (to hurt)",
+    "hsk": 2
+  },
+  {
+    "id": 141,
+    "word": "踢",
+    "pinyin": "tī",
+    "partOfSpeech": "verb",
+    "meaning": "to kick",
+    "hsk": 2
+  },
+  {
+    "id": 142,
+    "word": "题",
+    "pinyin": "tí",
+    "partOfSpeech": "noun",
+    "meaning": "question, problem, topic",
+    "hsk": 2
+  },
+  {
+    "id": 143,
+    "word": "条",
+    "pinyin": "tiáo",
+    "partOfSpeech": "classifier、（noun）",
+    "meaning": "measure word for long, thin, or strip-like objects; (clause, item)",
+    "hsk": 2
+  },
+  {
+    "id": 144,
+    "word": "跳舞",
+    "pinyin": "tiàowǔ",
+    "partOfSpeech": "verb",
+    "meaning": "to dance",
+    "hsk": 2
+  },
+  {
+    "id": 145,
+    "word": "头",
+    "pinyin": "tóu",
+    "partOfSpeech": "noun、（classifier）、（adjective）",
+    "meaning": "head; (measure word for animals); (first)",
+    "hsk": 2
+  },
+  {
+    "id": 146,
+    "word": "外国",
+    "pinyin": "wàiguó",
+    "partOfSpeech": "noun",
+    "meaning": "foreign country",
+    "hsk": 2
+  },
+  {
+    "id": 147,
+    "word": "外面",
+    "pinyin": "wàimiàn",
+    "partOfSpeech": "noun",
+    "meaning": "outside",
+    "hsk": 2
+  },
+  {
+    "id": 148,
+    "word": "完",
+    "pinyin": "wán",
+    "partOfSpeech": "verb",
+    "meaning": "to finish",
+    "hsk": 2
+  },
+  {
+    "id": 149,
+    "word": "万",
+    "pinyin": "wàn",
+    "partOfSpeech": "number",
+    "meaning": "ten thousand",
+    "hsk": 2
+  },
+  {
+    "id": 150,
+    "word": "往",
+    "pinyin": "wǎng",
+    "partOfSpeech": "verb、preposition",
+    "meaning": "to go; toward",
+    "hsk": 2
+  },
+  {
+    "id": 151,
+    "word": "网上",
+    "pinyin": "wǎngshang",
+    "partOfSpeech": "noun",
+    "meaning": "online",
+    "hsk": 2
+  },
+  {
+    "id": 152,
+    "word": "忘",
+    "pinyin": "wàng",
+    "partOfSpeech": "verb",
+    "meaning": "to forget",
+    "hsk": 2
+  },
+  {
+    "id": 153,
+    "word": "位",
+    "pinyin": "wèi",
+    "partOfSpeech": "classifier",
+    "meaning": "measure word for people",
+    "hsk": 2
+  },
+  {
+    "id": 154,
+    "word": "为什么",
+    "pinyin": "wèi shénme",
+    "partOfSpeech": "pronoun",
+    "meaning": "why",
+    "hsk": 2
+  },
+  {
+    "id": 155,
+    "word": "希望",
+    "pinyin": "xīwàng",
+    "partOfSpeech": "verb",
+    "meaning": "to hope",
+    "hsk": 2
+  },
+  {
+    "id": 156,
+    "word": "洗",
+    "pinyin": "xǐ",
+    "partOfSpeech": "verb",
+    "meaning": "to wash",
+    "hsk": 2
+  },
+  {
+    "id": 157,
+    "word": "洗手间",
+    "pinyin": "xǐshǒujiān",
+    "partOfSpeech": "noun",
+    "meaning": "restroom, toilet",
+    "hsk": 2
+  },
+  {
+    "id": 158,
+    "word": "下来",
+    "pinyin": "xiàlái",
+    "partOfSpeech": "verb",
+    "meaning": "to come down",
+    "hsk": 2
+  },
+  {
+    "id": 159,
+    "word": "下面",
+    "pinyin": "xiàmiàn",
+    "partOfSpeech": "noun",
+    "meaning": "below, under",
+    "hsk": 2
+  },
+  {
+    "id": 160,
+    "word": "下去",
+    "pinyin": "xiàqù",
+    "partOfSpeech": "verb",
+    "meaning": "to go down",
+    "hsk": 2
+  },
+  {
+    "id": 161,
+    "word": "小孩儿",
+    "pinyin": "xiǎoháir",
+    "partOfSpeech": "noun",
+    "meaning": "child, little kid",
+    "hsk": 2
+  },
+  {
+    "id": 162,
+    "word": "小时候",
+    "pinyin": "xiǎoshíhou",
+    "partOfSpeech": "noun",
+    "meaning": "childhood",
+    "hsk": 2
+  },
+  {
+    "id": 163,
+    "word": "笑",
+    "pinyin": "xiào",
+    "partOfSpeech": "verb",
+    "meaning": "to laugh, to smile",
+    "hsk": 2
+  },
+  {
+    "id": 164,
+    "word": "姓",
+    "pinyin": "xìng",
+    "partOfSpeech": "noun、verb",
+    "meaning": "surname; to be surnamed",
+    "hsk": 2
+  },
+  {
+    "id": 165,
+    "word": "姓名",
+    "pinyin": "xìngmíng",
+    "partOfSpeech": "noun",
+    "meaning": "full name",
+    "hsk": 2
+  },
+  {
+    "id": 166,
+    "word": "颜色",
+    "pinyin": "yánsè",
+    "partOfSpeech": "noun",
+    "meaning": "color",
+    "hsk": 2
+  },
+  {
+    "id": 167,
+    "word": "眼睛",
+    "pinyin": "yǎnjing",
+    "partOfSpeech": "noun",
+    "meaning": "eye",
+    "hsk": 2
+  },
+  {
+    "id": 168,
+    "word": "药",
+    "pinyin": "yào",
+    "partOfSpeech": "noun",
+    "meaning": "medicine, drug",
+    "hsk": 2
+  },
+  {
+    "id": 169,
+    "word": "药店",
+    "pinyin": "yàodiàn",
+    "partOfSpeech": "noun",
+    "meaning": "pharmacy",
+    "hsk": 2
+  },
+  {
+    "id": 170,
+    "word": "爷爷",
+    "pinyin": "yéye",
+    "partOfSpeech": "noun",
+    "meaning": "grandfather",
+    "hsk": 2
+  },
+  {
+    "id": 171,
+    "word": "一会儿",
+    "pinyin": "yíhuìr",
+    "partOfSpeech": "numberclassifier、（adverb）",
+    "meaning": "a while, a moment; (soon, in a little while)",
+    "hsk": 2
+  },
+  {
+    "id": 172,
+    "word": "已经",
+    "pinyin": "yǐjīng",
+    "partOfSpeech": "adverb",
+    "meaning": "already",
+    "hsk": 2
+  },
+  {
+    "id": 173,
+    "word": "一起",
+    "pinyin": "yìqǐ",
+    "partOfSpeech": "adverb",
+    "meaning": "together",
+    "hsk": 2
+  },
+  {
+    "id": 174,
+    "word": "意思",
+    "pinyin": "yìsi",
+    "partOfSpeech": "noun",
+    "meaning": "meaning, idea",
+    "hsk": 2
+  },
+  {
+    "id": 175,
+    "word": "阴",
+    "pinyin": "yīn",
+    "partOfSpeech": "adjective",
+    "meaning": "cloudy",
+    "hsk": 2
+  },
+  {
+    "id": 176,
+    "word": "因为",
+    "pinyin": "yīnwèi",
+    "partOfSpeech": "preposition、conjunction",
+    "meaning": "because; because of",
+    "hsk": 2
+  },
+  {
+    "id": 177,
+    "word": "游",
+    "pinyin": "yóu",
+    "partOfSpeech": "verb",
+    "meaning": "to swim",
+    "hsk": 2
+  },
+  {
+    "id": 178,
+    "word": "游泳",
+    "pinyin": "yóuyǒng",
+    "partOfSpeech": "verb",
+    "meaning": "to swim",
+    "hsk": 2
+  },
+  {
+    "id": 179,
+    "word": "有意思",
+    "pinyin": "yǒu yìsi",
+    "partOfSpeech": "adjective",
+    "meaning": "interesting, enjoyable",
+    "hsk": 2
+  },
+  {
+    "id": 180,
+    "word": "有时",
+    "pinyin": "yǒushí",
+    "partOfSpeech": "adverb",
+    "meaning": "sometimes",
+    "hsk": 2
+  },
+  {
+    "id": 181,
+    "word": "右",
+    "pinyin": "yòu",
+    "partOfSpeech": "noun",
+    "meaning": "right",
+    "hsk": 2
+  },
+  {
+    "id": 182,
+    "word": "右边",
+    "pinyin": "yòubian",
+    "partOfSpeech": "noun",
+    "meaning": "right side",
+    "hsk": 2
+  },
+  {
+    "id": 183,
+    "word": "鱼",
+    "pinyin": "yú",
+    "partOfSpeech": "noun",
+    "meaning": "fish",
+    "hsk": 2
+  },
+  {
+    "id": 184,
+    "word": "远",
+    "pinyin": "yuǎn",
+    "partOfSpeech": "adjective",
+    "meaning": "far",
+    "hsk": 2
+  },
+  {
+    "id": 185,
+    "word": "运动",
+    "pinyin": "yùndòng",
+    "partOfSpeech": "verb、noun",
+    "meaning": "to move, to exercise; sports, exercise",
+    "hsk": 2
+  },
+  {
+    "id": 186,
+    "word": "站",
+    "pinyin": "zhàn",
+    "partOfSpeech": "noun",
+    "meaning": "station, stop; to stand",
+    "hsk": 2
+  },
+  {
+    "id": 187,
+    "word": "丈夫",
+    "pinyin": "zhàngfu",
+    "partOfSpeech": "noun",
+    "meaning": "husband",
+    "hsk": 2
+  },
+  {
+    "id": 188,
+    "word": "这么",
+    "pinyin": "zhème",
+    "partOfSpeech": "pronoun",
+    "meaning": "so, such, like this",
+    "hsk": 2
+  },
+  {
+    "id": 189,
+    "word": "这样",
+    "pinyin": "zhèyàng",
+    "partOfSpeech": "pronoun",
+    "meaning": "like this, so",
+    "hsk": 2
+  },
+  {
+    "id": 190,
+    "word": "着",
+    "pinyin": "zhe",
+    "partOfSpeech": "auxiliary",
+    "meaning": "particle indicating ongoing action or state",
+    "hsk": 2
+  },
+  {
+    "id": 191,
+    "word": "正",
+    "pinyin": "zhèng",
+    "partOfSpeech": "adverb、（adjective）",
+    "meaning": "just, exactly, right; (straight)",
+    "hsk": 2
+  },
+  {
+    "id": 192,
+    "word": "周",
+    "pinyin": "zhōu",
+    "partOfSpeech": "noun、（classifier）",
+    "meaning": "week; (measure word for circumference, cycle)",
+    "hsk": 2
+  },
+  {
+    "id": 193,
+    "word": "准备",
+    "pinyin": "zhǔnbèi",
+    "partOfSpeech": "verb",
+    "meaning": "to prepare",
+    "hsk": 2
+  },
+  {
+    "id": 194,
+    "word": "自己",
+    "pinyin": "zìjǐ",
+    "partOfSpeech": "pronoun",
+    "meaning": "oneself",
+    "hsk": 2
+  },
+  {
+    "id": 195,
+    "word": "走",
+    "pinyin": "zǒu",
+    "partOfSpeech": "verb",
+    "meaning": "to walk",
+    "hsk": 2
+  },
+  {
+    "id": 196,
+    "word": "走路",
+    "pinyin": "zǒulù",
+    "partOfSpeech": "verb",
+    "meaning": "to walk",
+    "hsk": 2
+  },
+  {
+    "id": 197,
+    "word": "足球",
+    "pinyin": "zúqiú",
+    "partOfSpeech": "noun",
+    "meaning": "soccer, football",
+    "hsk": 2
+  },
+  {
+    "id": 198,
+    "word": "最",
+    "pinyin": "zuì",
+    "partOfSpeech": "adverb",
+    "meaning": "most, -est",
+    "hsk": 2
+  },
+  {
+    "id": 199,
+    "word": "左",
+    "pinyin": "zuǒ",
+    "partOfSpeech": "noun",
+    "meaning": "left",
+    "hsk": 2
+  },
+  {
+    "id": 200,
+    "word": "左边",
+    "pinyin": "zuǒbian",
+    "partOfSpeech": "noun",
+    "meaning": "left side",
+    "hsk": 2
+  }
+]
