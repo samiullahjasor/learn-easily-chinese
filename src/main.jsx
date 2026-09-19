@@ -2276,7 +2276,7 @@ function PaymentGate({ profile, user, onSignOut, onRefreshProfile }) {
     const cleanTransactionId = transactionId.trim();
 
     if (!cleanTransactionId) {
-      setError("Please enter your Alipay Transaction ID.");
+      setError("Please enter your Alipay Transaction Number.");
       return;
     }
 
@@ -2335,7 +2335,7 @@ function PaymentGate({ profile, user, onSignOut, onRefreshProfile }) {
             </div>
 
             <div>
-              <span>Alipay Transaction ID</span>
+              <span>Alipay Transaction Number</span>
               <strong>{profile?.alipay_transaction_id || "—"}</strong>
             </div>
 
@@ -2414,6 +2414,7 @@ function PaymentGate({ profile, user, onSignOut, onRefreshProfile }) {
           <div className="payment-instructions">
             <div className="payment-step">
               <span>1</span>
+
               <div>
                 <strong>Open Alipay</strong>
                 <p>Use the Scan function and scan the QR code.</p>
@@ -2422,6 +2423,7 @@ function PaymentGate({ profile, user, onSignOut, onRefreshProfile }) {
 
             <div className="payment-step">
               <span>2</span>
+
               <div>
                 <strong>Pay 20 CNY</strong>
                 <p>Complete the payment to the displayed Alipay account.</p>
@@ -2430,11 +2432,24 @@ function PaymentGate({ profile, user, onSignOut, onRefreshProfile }) {
 
             <div className="payment-step">
               <span>3</span>
+
+              <div>
+                <strong>Find your transaction number</strong>
+                <p>
+                  After payment, open the payment details in Alipay and find
+                  the transaction or reference number shown there.
+                </p>
+              </div>
+            </div>
+
+            <div className="payment-step">
+              <span>4</span>
+
               <div>
                 <strong>Submit for approval</strong>
                 <p>
-                  After payment, enter your Alipay Transaction ID and send
-                  the payment for administrator review.
+                  Enter the Alipay Transaction Number below and send your
+                  payment claim for administrator review.
                 </p>
               </div>
             </div>
@@ -2450,21 +2465,32 @@ function PaymentGate({ profile, user, onSignOut, onRefreshProfile }) {
             </div>
 
             <div className="payer-account">
-              <span>Alipay Transaction ID</span>
+              <span>Alipay Transaction Number</span>
 
               <input
                 type="text"
                 value={transactionId}
                 onChange={(e) => setTransactionId(e.target.value)}
-                placeholder="Enter Alipay transaction ID"
+                placeholder="Enter the transaction number shown in Alipay"
                 autoComplete="off"
               />
+
+              <small className="muted">
+                After payment, open the payment details in Alipay and enter
+                the transaction/reference number shown there.
+              </small>
             </div>
 
-            {error && <div className="auth-alert error">{error}</div>}
+            {error && (
+              <div className="auth-alert error">
+                {error}
+              </div>
+            )}
 
             {message && (
-              <div className="auth-alert success">{message}</div>
+              <div className="auth-alert success">
+                {message}
+              </div>
             )}
 
             <button
@@ -2504,9 +2530,12 @@ function AdminPanel() {
   async function loadUsers() {
     setLoading(true);
     setError("");
+
     const { data, error: loadError } = await supabase
       .from("profiles")
-      .select("id,email,phone,role,payment_status,lifetime_access,payment_code,alipay_transaction_id,created_at")
+      .select(
+        "id,email,phone,role,payment_status,lifetime_access,payment_code,alipay_transaction_id,created_at"
+      )
       .eq("role", "user")
       .order("created_at", { ascending: false });
 
@@ -2516,6 +2545,7 @@ function AdminPanel() {
     } else {
       setUsers(data || []);
     }
+
     setLoading(false);
   }
 
@@ -2526,40 +2556,85 @@ function AdminPanel() {
   async function reviewPayment(userId, decision) {
     setWorkingId(userId);
     setError("");
-    const { error: reviewError } = await supabase.rpc("admin_review_payment", {
-      target_user: userId,
-      decision,
-    });
+
+    const { error: reviewError } = await supabase.rpc(
+      "admin_review_payment",
+      {
+        target_user: userId,
+        decision,
+      }
+    );
 
     if (reviewError) {
       setError(reviewError.message);
     } else {
       await loadUsers();
     }
+
     setWorkingId("");
   }
 
-  const shown = filter === "all" ? users : users.filter((item) => item.payment_status === filter);
-  const pendingCount = users.filter((item) => item.payment_status === "pending").length;
-  const approvedCount = users.filter((item) => item.payment_status === "approved").length;
-  const rejectedCount = users.filter((item) => item.payment_status === "rejected").length;
+  const shown =
+    filter === "all"
+      ? users
+      : users.filter(
+          (item) => item.payment_status === filter
+        );
+
+  const pendingCount = users.filter(
+    (item) => item.payment_status === "pending"
+  ).length;
+
+  const approvedCount = users.filter(
+    (item) => item.payment_status === "approved"
+  ).length;
+
+  const rejectedCount = users.filter(
+    (item) => item.payment_status === "rejected"
+  ).length;
 
   return (
     <section className="content">
       <div className="page-title admin-page-title">
         <div>
           <div className="eyebrow">ADMIN ONLY</div>
+
           <h1>Payment approvals</h1>
-          <p className="muted">Review payment claims and grant or reject lifetime access.</p>
+
+          <p className="muted">
+            Review payment claims and grant or reject lifetime access.
+          </p>
         </div>
-        <button className="secondary" onClick={loadUsers}><RefreshCw size={17}/> Refresh</button>
+
+        <button
+          className="secondary"
+          onClick={loadUsers}
+        >
+          <RefreshCw size={17} />
+          Refresh
+        </button>
       </div>
 
       <div className="grid four admin-stats">
-        <div className="card admin-stat"><span>Pending</span><strong>{pendingCount}</strong></div>
-        <div className="card admin-stat"><span>Approved</span><strong>{approvedCount}</strong></div>
-        <div className="card admin-stat"><span>Rejected</span><strong>{rejectedCount}</strong></div>
-        <div className="card admin-stat"><span>Total users</span><strong>{users.length}</strong></div>
+        <div className="card admin-stat">
+          <span>Pending</span>
+          <strong>{pendingCount}</strong>
+        </div>
+
+        <div className="card admin-stat">
+          <span>Approved</span>
+          <strong>{approvedCount}</strong>
+        </div>
+
+        <div className="card admin-stat">
+          <span>Rejected</span>
+          <strong>{rejectedCount}</strong>
+        </div>
+
+        <div className="card admin-stat">
+          <span>Total users</span>
+          <strong>{users.length}</strong>
+        </div>
       </div>
 
       <div className="admin-toolbar">
@@ -2570,32 +2645,140 @@ function AdminPanel() {
           ["unpaid", "Unpaid"],
           ["all", "All"],
         ].map(([value, label]) => (
-          <button key={value} className={filter === value ? "tab selected" : "tab"} onClick={() => setFilter(value)}>{label}</button>
+          <button
+            key={value}
+            className={
+              filter === value
+                ? "tab selected"
+                : "tab"
+            }
+            onClick={() => setFilter(value)}
+          >
+            {label}
+          </button>
         ))}
       </div>
 
-      {error && <div className="auth-alert error admin-error">{error}</div>}
+      {error && (
+        <div className="auth-alert error admin-error">
+          {error}
+        </div>
+      )}
 
       <div className="card admin-table-card">
-        {loading ? <div className="admin-empty">Loading users...</div> : shown.length === 0 ? (
-          <div className="admin-empty"><ShieldCheck size={34}/><h3>No users in this list</h3><p className="muted">Nothing needs action right now.</p></div>
+        {loading ? (
+          <div className="admin-empty">
+            Loading users...
+          </div>
+        ) : shown.length === 0 ? (
+          <div className="admin-empty">
+            <ShieldCheck size={34} />
+
+            <h3>No users in this list</h3>
+
+            <p className="muted">
+              Nothing needs action right now.
+            </p>
+          </div>
         ) : (
           <div className="admin-table-wrap">
             <table className="admin-table">
-              <thead><tr><th>User</th><th>Payment Code</th><th>Alipay Transaction ID</th><th>Status</th><th>Access</th><th>Created</th><th>Action</th></tr></thead>
+              <thead>
+                <tr>
+                  <th>User</th>
+                  <th>Payment Code</th>
+                  <th>Alipay Transaction Number</th>
+                  <th>Status</th>
+                  <th>Access</th>
+                  <th>Created</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+
               <tbody>
                 {shown.map((item) => (
                   <tr key={item.id}>
-                    <td><strong>{item.email || item.phone || "Unknown user"}</strong><small>{item.id}</small></td>
-                    <td><strong>{item.payment_code || "—"}</strong></td>
-                    <td><strong>{item.alipay_transaction_id || "—"}</strong></td>
-                    <td><span className={`admin-status status-${item.payment_status}`}>{item.payment_status}</span></td>
-                    <td>{item.lifetime_access ? "Lifetime" : "Locked"}</td>
-                    <td>{item.created_at ? new Date(item.created_at).toLocaleDateString() : "—"}</td>
+                    <td>
+                      <strong>
+                        {item.email ||
+                          item.phone ||
+                          "Unknown user"}
+                      </strong>
+
+                      <small>
+                        {item.id}
+                      </small>
+                    </td>
+
+                    <td>
+                      <strong>
+                        {item.payment_code || "—"}
+                      </strong>
+                    </td>
+
+                    <td>
+                      <strong>
+                        {item.alipay_transaction_id || "—"}
+                      </strong>
+                    </td>
+
+                    <td>
+                      <span
+                        className={`admin-status status-${item.payment_status}`}
+                      >
+                        {item.payment_status}
+                      </span>
+                    </td>
+
+                    <td>
+                      {item.lifetime_access
+                        ? "Lifetime"
+                        : "Locked"}
+                    </td>
+
+                    <td>
+                      {item.created_at
+                        ? new Date(
+                            item.created_at
+                          ).toLocaleDateString()
+                        : "—"}
+                    </td>
+
                     <td>
                       <div className="admin-actions">
-                        <button className="primary admin-approve" onClick={() => reviewPayment(item.id, "approved")} disabled={workingId === item.id}>Approve</button>
-                        <button className="secondary admin-reject" onClick={() => reviewPayment(item.id, "rejected")} disabled={workingId === item.id}>Reject</button>
+                        <button
+                          className="primary admin-approve"
+                          onClick={() =>
+                            reviewPayment(
+                              item.id,
+                              "approved"
+                            )
+                          }
+                          disabled={
+                            workingId === item.id
+                          }
+                        >
+                          {workingId === item.id
+                            ? "Working..."
+                            : "Approve"}
+                        </button>
+
+                        <button
+                          className="secondary admin-reject"
+                          onClick={() =>
+                            reviewPayment(
+                              item.id,
+                              "rejected"
+                            )
+                          }
+                          disabled={
+                            workingId === item.id
+                          }
+                        >
+                          {workingId === item.id
+                            ? "Working..."
+                            : "Reject"}
+                        </button>
                       </div>
                     </td>
                   </tr>
